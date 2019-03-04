@@ -7,7 +7,7 @@ The tool consist of 3 separate components
 
 * [ ] Library for logging request and responses
     * [ ] For Golang
-    * [ ] For Java (With a spring boot extension)
+    * [x] For Java (With a spring boot extension)
 
 It's also not hard to implement the library for your desired language using the log files format described in a docs/logfile.md
 * [ ] Standalone application for parsing log files and putting that into elastic search
