@@ -69,6 +69,11 @@ public class FileGraphLogger implements GraphLogger, Closeable{
     }
 
     @Override
+    public void initialize() throws GraphLoggerException{
+        this.createFile();
+    }
+
+    @Override
     public void log(Date timestamp, int nodeId, int receiverId, int wideRequestId, byte[] payload) throws GraphLoggerException {
         File file = new File(getFileName());
         long length = file.length();

@@ -54,6 +54,10 @@ hs_err_pid*
 # .idea/modules.xml
 # .idea/*.iml
 # .idea/modules
+build/**
+nodemap.json
+testlogs/**
+test.logfile
 
 # CMake
 cmake-build-*/

@@ -10,6 +10,9 @@ public class SimpleHashNodeIdGenerator implements NodeIdGenerator {
         int h = 0;
         for (char aVal : pNodeName.toCharArray()) {
             h = 31 * h + aVal;
+            if (h < 0) {
+                h = Math.abs(h);
+            }
         }
         return h;
     }
